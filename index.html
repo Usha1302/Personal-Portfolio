@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/648982f640.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">       
+            <nav>
+                <a id="top"></a>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Skills">Technical Skills</a></li> 
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hello, I'm <br><span>Usha Sri Manchikanti</span></h1>
+                <p>From CMR Technical Campus</p>
+                <p>Computer Science and Engineering(Data Science)</p>
+                <a href="images/Ushasri-Resume.pdf" target="_blank" download class="btn btn2"> Download Resume</a>
+            </div>
+        </div>
+    </div>
+
+     
+<!-- ====about===== -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/mainimage.png" alt="">
+                </div>
+
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Seeking a suitable position in a reputed organization. Looking forward to an opportunity
+                        which would help me to acquire skills there by giving scope to exploit
+                        for the development of the organization</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Personal Information')">Personal Information</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="Personal Information">
+                        <ul>
+                            <li><span>Mail ID:</span><br>manchikantiushasri@gmail.com</li>
+                            <li><span>Contact No:</span><br>7569087108</li>
+                            <li><span>Date of Birth:</span><br>13-05-2002</li>
+                            <li><span>Adderss:</span><br>5-28/25,Dhullapally<br>
+                                 Medchal,Telangana,500100</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>July-2023</span><br>Web Development intern@Internsavy</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020-2024</span><br>B.TECH-CMRTC, Hyderabad</li>
+                            <li><span>2018-2020</span><br>Intermediate-ST.Anthonys'Junior College</li>
+                            <li><span>2018</span><br>SSC-ST.Anthony's High School</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="Skills">
+        <div class="container">
+            <h1 class="sub-title">Technical Skills</h1>
+             <div class="services-list">
+                <div>
+                    <p>HTML</p>
+                </div>
+                <div>
+                    <p>CSS</p>
+                </div>
+                <div>
+                    <p>Javascript
+                    </p>
+                </div>
+                <div>
+                    <p>C++</p>   
+                </div>
+                <div>
+                    <p>Node.js</p>
+                </div>
+				<div>
+                    <p>Database</p>
+                </div>
+                <div>
+                    <p>DSA</p>
+                </div>
+                
+            </div>
+                
+            </div>
+           
+        </div>
+    </div>
+
+
+<!-- ======portfolio======= -->
+<br><br><br><br><br><br>
+    <div id="Projects">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/sentiment_analysisimage.jpg" alt="">
+                    <div class="layer">
+                        <h3>Sentiment Analysis</h3>
+                        <a href="https://github.com/Usha1302/Stress-Detection-Project-" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/resume-builder.jpg" alt="">
+                    <div class="layer">
+                        <h3>Resume-Bilder</h3>
+                        <a href="https://usha1302.github.io/Resume-Builder/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/personal-portfolio.png" alt="">
+                    <div class="layer">
+                        <h3>personal-portfolio</h3>
+                        <a href="#top" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------contact----------- -->
+</div>
+<br><br><br><br><br><br>
+                <div id="contact" class="con">
+                    <div class="container">
+                        <div class="row">
+                            <div class="contact-left">
+                                <h1 class="sub-title">Contact Me</h1>
+                                <p><i class="fa fa-envelope"></i>manchikantiushasri@gmail.com</p>
+                                <p><i class="fas fa-phone"></i>7569087108</p>
+                                <p><i class="fas fa-solid fa-map-location"></i>5-28/25,Krishna Nagar Colony,Dhullapally<br>&emsp;&emsp;&ensp;Medchal -500100</p>
+                                <div class="social-icons">
+                                    <a href="https://wa.me/7569087108" target="_blank"><i class="fa fa-whatsapp"></i></a>
+                                    <a href="https://www.linkedin.com/in/ushasri-manchikanti-5606a2227/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                                    <a href="https://github.com/Usha1302" target="_blank"><i class="fa-brands fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+               
+            </div>
+        </div>
+
+    </div>
+    <div class="copyright">
+        <p> Copyright @Usha Sri Manchikanti</p>
+    </div>
+        
+      <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+    
+        function opentab(tabname) {
+          for (tablink of tablinks) {
+            tablink.classList.remove("active-link");
+          }
+          for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+          }
+    
+          event.currentTarget.classList.add("active-link");
+          document.getElementById(tabname).classList.add("active-tab");
+        }
+      </script>
+    
+      <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+          sidemenu.style.right = "0";
+        }
+    
+        function closemenu() {
+          sidemenu.style.right = "-200px";
+        }
+      </script>
+
+
+
+</body>
+
+</html>
